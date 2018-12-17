@@ -1,0 +1,33 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "prototyping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config build/webpack.config.dev.js",
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js --mode development --watch",
+    "lint": "eslint --ext .js,.vue src",
+    "build-styles": "node build/build-styles.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "qs": "^6.6.0",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2",
+    "vue-sweetalert2": "^1.5.11",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "css-loader": "^2.0.1",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
